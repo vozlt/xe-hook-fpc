@@ -16,6 +16,7 @@
   shell> git clone git://github.com/vozlt/xe-hook-fpc.git
   shell> cd xe-hook-fpc
   shell> cp -af config/config.user.inc.php  [Installed xpressengine path]/config/
+  shell> cp -af classes/cache/FullPageCacheHandler.class.php [Installed xpressengine path]/classes/cache/
   shell> cp -af index.fpc.php  [Installed xpressengine path]/
   shell> cd [Installed xpressengine path]
   shell> mv index.php index.org.php
