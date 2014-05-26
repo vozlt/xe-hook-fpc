@@ -1,0 +1,35 @@
+* Dependencies
+  * Xpressengine(1.7.4+)
+  * Memcached
+
+* Xpressengine memcached setting
+  shell> vi [Installed xpressengine path]/files/config/db.config.php
+  'use_object_cache' => 'memcache://localhost:11211'
+
+* Installation
+  * Automatically
+  shell> git clone git://github.com/vozlt/xe-hook-fpc.git
+  shell> cd xe-hook-fpc
+  shell> bash install.sh install [Installed xpressengine path]
+
+  * Manually
+  shell> git clone git://github.com/vozlt/xe-hook-fpc.git
+  shell> cd xe-hook-fpc
+  shell> cp -af config/config.user.inc.php  [Installed xpressengine path]/config/
+  shell> cp -af index.fpc.php  [Installed xpressengine path]/
+  shell> cd [Installed xpressengine path]
+  shell> mv index.php index.org.php
+  shell> ln -sf index.fpc.php index.php
+
+* Uninstallation
+  * Automatically
+  shell> cd xe-hook-fpc
+  shell> bash install.sh uninstall [Installed xpressengine path]
+
+  * Manually
+  shell> cd [Installed xpressengine path]
+  shell> rm -f config/config.user.inc.php
+  shell> rm -rf classes/cache/FullPageCacheHandler.class.php
+  shell> rm -f index.fpc.php
+  shell> unlink index.php
+  shell> mv index.org.php index.php
