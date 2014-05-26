@@ -70,7 +70,7 @@ This analysis was using xhprof.
 
 Cache expiration setting file path
 ```
-shell> vi [Installed xpressengine path]/classes/cache/FullPageCacheHandler.class.php
+shell> vi [Installed xpressengine path]/config/config.user.inc.php
 ````
 
 ## Display cache key
