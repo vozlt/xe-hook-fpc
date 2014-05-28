@@ -68,10 +68,19 @@ This analysis was using xhprof.
 | searched result   | 3600              |
 | menu              | 3600              |
 
-Cache expiration setting file path
+Cache expiration setting file path(If the value is set to 0, will be not cache.)
 ```
 shell> vi [Installed xpressengine path]/config/config.user.inc.php
 ````
+
+```php
+define('__XE_HOOK_FPC_INDEX_EXPIRES__', 300);     /* index's cache expires time(sec) */
+define('__XE_HOOK_FPC_LIST_EXPIRES__', 3600);     /* list's cache expires time(sec) */
+define('__XE_HOOK_FPC_DOCUMENT_EXPIRES__', 3600); /* document's cache expires time(sec) */
+define('__XE_HOOK_FPC_COMMENT_EXPIRES__', 3600);  /* comment's cache expires time(sec) */
+define('__XE_HOOK_FPC_SEARCH_EXPIRES__', 3600);   /* searched result's cache expires time(sec) */
+define('__XE_HOOK_FPC_MENU_EXPIRES__', 3600);     /* menu's cache expires time(sec) */
+```
 
 ## Display cache key
 
