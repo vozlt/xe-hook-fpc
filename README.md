@@ -98,4 +98,4 @@ If xe-hook-fpc is enabled will be displayed as follow.
 ```
 
 ## Author
-YoungJoo.Kim <http://superlinuxer.com>
+YoungJoo.Kim [<vozlt@vozlt.com>]

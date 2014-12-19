@@ -2,8 +2,8 @@
 /**--====
  * @file: FullPageCacheHandler.class.php
  * @brief: Hook class for implement xpressengine full page cache
- * @author: YoungJoo.Kim <http://superlinuxer.com>
- * @version: $Revision:
+ * @author: YoungJoo.Kim <vozlt@vozlt.com>
+ * @version:
  * @date: 20140301
  ====--**/
 class FullPageCacheHandler
